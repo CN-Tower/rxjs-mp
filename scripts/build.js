@@ -10,3 +10,5 @@ const rxjs4wx = fn.rd(indexPath)
   .replace(/([\d\w])\(([\d\w]*)\)\}\)\(\);/, `cb($1($2))})(${umdExp});`);
 
 fn.wt(indexPath, rxjs4wx);
+
+fn.log(`Build Success!, Size: ${fn.size(indexPath)}KB`, 'Rxjs4Wx');

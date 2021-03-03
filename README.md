@@ -4,8 +4,9 @@
 
 ### How to use
 
-Install: `npm install rxjs4wx`;
-Then:
+Install: 
+`npm install rxjs4wx`;<br>
+In Js:
 ```js
 const Rx = require('rxjs4wx');
 
