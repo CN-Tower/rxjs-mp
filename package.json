@@ -1,0 +1,24 @@
+{
+  "name": "rxjs4wx",
+  "version": "1.0.0",
+  "description": "rxjs for wechat miniprogram.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rxjs",
+    "rxjs4wx",
+    "rxjs-wx",
+    "rxjs-wechat",
+    "wx",
+    "wechat",
+    "miniprogram"
+  ],
+  "author": "CN-Tower",
+  "license": "ISC",
+  "devDependencies": {
+    "rxjs": "^6.6.6",
+    "webpack": "^5.24.2"
+  }
+}
