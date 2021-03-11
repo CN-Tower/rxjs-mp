@@ -1,34 +1,51 @@
-# rxjs4wx
+# rxjs-mp
 
-> Rxjs for wechat miniprogram.
+> Rxjs for miniprogram. 在小程序中使用RxJs。
 
-### How to use
+### 1. 安装: 
+`npm install rxjs-mp`;<br>
 
-Install: 
-`npm install rxjs4wx`;<br>
+### 2. 使用:
 ```js
-const Rx = require('rxjs4wx');
+const Rx = require('rxjs-mp');
 
-const obs = new Rx.Observable(ob => {
-  setTimeout(() => {
-    ob.next('next()');
-    ob.complete();
-    // ob.error('error');
-  }, 2000);
-  return () => {
-    console.log('disposed');
-  }
+// 使用Rxjs封装请求
+function request(url, data = {}, method = "GET") {
+  return new Rx.Observable(ob => {
+    const requestTask = wx.request({
+      url, data, method,
+      header: {
+        'Token': wx.getStorageSync('token'),
+        'Content-Type': 'application/json'
+      },
+      success: res => {
+        if (res.statusCode == 200) {
+          ob.next(res);
+          ob.complete();
+        } else {
+          ob.error(res.msg);
+        }
+      },
+      fail: err => {
+        console.error(err);
+        ob.error(err);
+      }
+    });
+    return () => requestTask.abort();
+  });
+}
+
+// 发起请求
+const sub = request('htts://some-api-url').pipe(
+  Rx.operators.map(res => res && res.data || {})
+).subscribe(res => {
+  console.log(res);
+}, err => {
+  console.error(err);
 });
 
-const sb = obs.pipe(
-  Rx.operators.map(x => x)
-).subscribe(
-  res => console.log(res),
-  e => console.log(e),
-  () => console.log('complete')
-);
-
+// 超时取消请求
 setTimeout(() => {
-  sb.unsubscribe();
+  sub.unsubscribe();
 }, 1000);
 ```

@@ -1,6 +1,6 @@
 {
-  "name": "rxjs4wx",
-  "version": "1.0.0",
+  "name": "rxjs-mp",
+  "version": "1.0.1",
   "description": "rxjs for wechat miniprogram.",
   "main": "index.js",
   "scripts": {
@@ -11,20 +11,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CN-Tower/rxjs4wx.git"
+    "url": "git+https://github.com/CN-Tower/rxjs-mp.git"
   },
   "keywords": [
     "rxjs",
+    "rxjs-mp",
+    "rxjs4mp",
     "rxjs4wx",
     "rxjs-wx",
     "rxjs-wechat",
-    "wx",
     "wechat",
-    "miniprogram"
+    "miniprogram",
+    "小程序"
   ],
   "author": "CN-Tower",
   "license": "ISC",
-  "homepage": "https://github.com/CN-Tower/rxjs4wx#readme",
+  "homepage": "https://github.com/CN-Tower/rxjs-mp#readme",
   "devDependencies": {
     "funclib": "^4.1.3",
     "rxjs": "^6.6.6",
