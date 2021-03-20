@@ -15,8 +15,7 @@ function request(url, data = {}, method = "GET") {
     const requestTask = wx.request({
       url, data, method,
       header: {
-        'Token': wx.getStorageSync('token'),
-        'Content-Type': 'application/json'
+        'Token': wx.getStorageSync('token')
       },
       success: res => {
         if (res.statusCode == 200) {

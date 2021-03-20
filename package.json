@@ -1,12 +1,10 @@
 {
   "name": "rxjs-mp",
-  "version": "1.0.2",
+  "version": "2.0.1",
   "description": "rxjs for wechat miniprogram.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production && npm run umd && node scripts/build.js",
-    "build:dev": "webpack --mode development",
-    "umd": "uglifyjs src/umd.js -m -o src/umd.min.js",
+    "build": "node scripts/build.js",
     "test": "node test/test.js"
   },
   "repository": {
@@ -15,23 +13,29 @@
   },
   "keywords": [
     "rxjs",
+    "rxjs.umd.js",
+    "rxjs.min.js",
     "rxjs-mp",
     "rxjs4mp",
     "rxjs4wx",
     "rxjs-wx",
     "rxjs-wechat",
+    "mp",
+    "mp-rxjs",
     "wechat",
+    "weixin",
+    "@mptools",
     "miniprogram",
-    "小程序"
+    "小程序",
+    "小程序rxjs",
+    "小程序开发",
+    "小程序函数库"
   ],
   "author": "CN-Tower",
   "license": "ISC",
   "homepage": "https://github.com/CN-Tower/rxjs-mp#readme",
   "devDependencies": {
-    "funclib": "^4.1.3",
-    "rxjs": "^6.6.6",
-    "uglify-js": "^3.13.0",
-    "webpack": "^5.24.2",
-    "webpack-cli": "^4.5.0"
+    "funclib": "^5.1.1",
+    "rxjs": "^6.6.6"
   }
 }
