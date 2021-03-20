@@ -160,107 +160,107 @@ import { withLatestFrom } from 'rxjs/internal/operators/withLatestFrom';
 import { zip } from 'rxjs/internal/operators/zip';
 import { zipAll } from 'rxjs/internal/operators/zipAll';
 
-export declare const operators = {
-	audit,
-  auditTime,
-  buffer,
-  bufferCount,
-  bufferTime,
-  bufferToggle,
-  bufferWhen,
-  catchError,
-  combineAll,
-  combineLatest,
-  concat,
-  concatAll,
-  concatMap,
-  concatMapTo,
-  count,
-  debounce,
-  debounceTime,
-  defaultIfEmpty,
-  delay,
-  delayWhen,
-  dematerialize,
-  distinct,
-  distinctUntilChanged,
-  distinctUntilKeyChanged,
-  elementAt,
-  endWith,
-  every,
-  exhaust,
-  exhaustMap,
-  expand,
-  filter,
-  finalize,
-  find,
-  findIndex,
-  first,
-  groupBy,
-  ignoreElements,
-  isEmpty,
-  last,
-  map,
-  mapTo,
-  materialize,
-  max,
-  merge,
-  mergeAll,
-  mergeMapTo,
-  mergeScan,
-  min,
-  multicast,
-  observeOn,
-  onErrorResumeNext,
-  pairwise,
-  partition,
-  pluck,
-  publish,
-  publishBehavior,
-  publishLast,
-  publishReplay,
-  race,
-  reduce,
-  repeat,
-  repeatWhen,
-  retry,
-  retryWhen,
-  refCount,
-  sample,
-  sampleTime,
-  scan,
-  sequenceEqual,
-  share,
-  shareReplay,
-  single,
-  skip,
-  skipLast,
-  skipUntil,
-  skipWhile,
-  startWith,
-  subscribeOn,
-  switchAll,
-  switchMap,
-  switchMapTo,
-  take,
-  takeLast,
-  takeUntil,
-  takeWhile,
-  tap,
-  throttle,
-  throttleTime,
-  throwIfEmpty,
-  timeInterval,
-  timeout,
-  timeoutWith,
-  timestamp,
-  toArray,
-  window,
-  windowCount,
-  windowTime,
-  windowToggle,
-  windowWhen,
-  withLatestFrom,
-  zip,
-  zipAll
+export declare const operators: {
+	audit: typeof audit;
+  auditTime: typeof auditTime;
+  buffer: typeof buffer;
+  bufferCount: typeof bufferCount;
+  bufferTime: typeof bufferTime;
+  bufferToggle: typeof bufferToggle;
+  bufferWhen: typeof bufferWhen;
+  catchError: typeof catchError;
+  combineAll: typeof combineAll;
+  combineLatest: typeof combineLatest;
+  concat: typeof concat;
+  concatAll: typeof concatAll;
+  concatMap: typeof concatMap;
+  concatMapTo: typeof concatMapTo;
+  count: typeof count;
+  debounce: typeof debounce;
+  debounceTime: typeof debounceTime;
+  defaultIfEmpty: typeof defaultIfEmpty;
+  delay: typeof delay;
+  delayWhen: typeof delayWhen;
+  dematerialize: typeof dematerialize;
+  distinct: typeof distinct;
+  distinctUntilChanged: typeof distinctUntilChanged;
+  distinctUntilKeyChanged: typeof distinctUntilKeyChanged;
+  elementAt: typeof elementAt;
+  endWith: typeof endWith;
+  every: typeof every;
+  exhaust: typeof exhaust;
+  exhaustMap: typeof exhaustMap;
+  expand: typeof expand;
+  filter: typeof filter;
+  finalize: typeof finalize;
+  find: typeof find;
+  findIndex: typeof findIndex;
+  first: typeof first;
+  groupBy: typeof groupBy;
+  ignoreElements: typeof ignoreElements;
+  isEmpty: typeof isEmpty;
+  last: typeof last;
+  map: typeof map;
+  mapTo: typeof mapTo;
+  materialize: typeof materialize;
+  max: typeof max;
+  merge: typeof merge;
+  mergeAll: typeof mergeAll;
+  mergeMapTo: typeof mergeMapTo;
+  mergeScan: typeof mergeScan;
+  min: typeof min;
+  multicast: typeof multicast;
+  observeOn: typeof observeOn;
+  onErrorResumeNext: typeof onErrorResumeNext;
+  pairwise: typeof pairwise;
+  partition: typeof partition;
+  pluck: typeof pluck;
+  publish: typeof publish;
+  publishBehavior: typeof publishBehavior;
+  publishLast: typeof publishLast;
+  publishReplay: typeof publishReplay;
+  race: typeof race;
+  reduce: typeof reduce;
+  repeat: typeof repeat;
+  repeatWhen: typeof repeatWhen;
+  retry: typeof retry;
+  retryWhen: typeof retryWhen;
+  refCount: typeof refCount;
+  sample: typeof sample;
+  sampleTime: typeof sampleTime;
+  scan: typeof scan;
+  sequenceEqual: typeof sequenceEqual;
+  share: typeof share;
+  shareReplay: typeof shareReplay;
+  single: typeof single;
+  skip: typeof skip;
+  skipLast: typeof skipLast;
+  skipUntil: typeof skipUntil;
+  skipWhile: typeof skipWhile;
+  startWith: typeof startWith;
+  subscribeOn: typeof subscribeOn;
+  switchAll: typeof switchAll;
+  switchMap: typeof switchMap;
+  switchMapTo: typeof switchMapTo;
+  take: typeof take;
+  takeLast: typeof takeLast;
+  takeUntil: typeof takeUntil;
+  takeWhile: typeof takeWhile;
+  tap: typeof tap;
+  throttle: typeof throttle;
+  throttleTime: typeof throttleTime;
+  throwIfEmpty: typeof throwIfEmpty;
+  timeInterval: typeof timeInterval;
+  timeout: typeof timeout;
+  timeoutWith: typeof timeoutWith;
+  timestamp: typeof timestamp;
+  toArray: typeof toArray;
+  window: typeof window;
+  windowCount: typeof windowCount;
+  windowTime: typeof windowTime;
+  windowToggle: typeof windowToggle;
+  windowWhen: typeof windowWhen;
+  withLatestFrom: typeof withLatestFrom;
+  zip: typeof zip;
+  zipAll: typeof zipAll;
 }

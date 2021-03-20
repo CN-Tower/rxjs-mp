@@ -20,8 +20,8 @@ const operators = operatorsTpl.match(/\{\s?\w*\s?\}/mg).map(op => op.replace(/[\
 
 fn.wt(indexDPath, `${fn.rd(rxjsDtsPath).replace(/\.\//mg, 'rxjs/')}
 ${operatorsTpl.replace(/export\s{/mg, 'import {').replace(/\.\.\//mg, 'rxjs/')}
-export declare const operators = {
-	${operators.join(',\r\n  ')}
+export declare const operators: {
+	${operators.map(op => `${op}: typeof ${op};`).join('\r\n  ')}
 }`);
 
 fn.timeout(800, () => {
