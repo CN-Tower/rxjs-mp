@@ -161,7 +161,7 @@ import { zip } from 'rxjs/internal/operators/zip';
 import { zipAll } from 'rxjs/internal/operators/zipAll';
 
 export declare const operators: {
-	audit: typeof audit;
+  audit: typeof audit;
   auditTime: typeof auditTime;
   buffer: typeof buffer;
   bufferCount: typeof bufferCount;

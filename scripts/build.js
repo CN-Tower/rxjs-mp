@@ -21,11 +21,11 @@ const operators = operatorsTpl.match(/\{\s?\w*\s?\}/mg).map(op => op.replace(/[\
 fn.wt(indexDPath, `${fn.rd(rxjsDtsPath).replace(/\.\//mg, 'rxjs/')}
 ${operatorsTpl.replace(/export\s{/mg, 'import {').replace(/\.\.\//mg, 'rxjs/')}
 export declare const operators: {
-	${operators.map(op => `${op}: typeof ${op};`).join('\r\n  ')}
+  ${operators.map(op => `${op}: typeof ${op};`).join('\r\n  ')}
 }`);
 
 fn.timeout(800, () => {
-	fn.log(`Build Success:
+  fn.log(`Build Success:
 rxjs.js : ${fn.size(rxjsPath)}KB
 index.js: ${fn.size(indexPath)}KB`, 'rxjs-mp');
 });
