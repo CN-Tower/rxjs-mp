@@ -1,6 +1,6 @@
 {
   "name": "rxjs-mp",
-  "version": "2.0.1",
+  "version": "2.1.1",
   "description": "rxjs for wechat miniprogram.",
   "main": "index.js",
   "scripts": {
