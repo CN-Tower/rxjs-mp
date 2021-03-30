@@ -1,6 +1,6 @@
 {
   "name": "rxjs-mp",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "rxjs for wechat miniprogram.",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,6 @@
   "homepage": "https://github.com/CN-Tower/rxjs-mp#readme",
   "devDependencies": {
     "funclib": "^5.1.1",
-    "rxjs": "^6.6.6"
+    "rxjs": "^6.6.7"
   }
 }
